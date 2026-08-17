@@ -1,0 +1,934 @@
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .navbar {
+
+        gap: 20px;
+
+    }
+
+    .header-btn {
+
+        display: none;
+
+    }
+
+    .hero-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+
+    }
+
+    .hero-content {
+
+        text-align: center;
+
+    }
+
+    .hero-subtitle {
+
+        justify-content: center;
+
+    }
+
+    .hero-title {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+    .hero-description {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+    .hero-highlights {
+
+        justify-content: center;
+
+    }
+
+    .hero-visual {
+
+        min-height: 450px;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .header {
+
+        height: 70px;
+
+    }
+
+    .header.scrolled {
+
+        height: 65px;
+
+    }
+
+
+    /* Mobile Navbar */
+
+    .navbar {
+
+        position: absolute;
+
+        top: 70px;
+
+        left: 5%;
+
+        width: 90%;
+
+        padding: 25px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+
+        background: var(--white-color);
+
+        border: 1px solid var(--border-color);
+
+        border-radius: 12px;
+
+        box-shadow:
+            0 20px 50px rgba(0, 0, 0, 0.10);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transform: translateY(-10px);
+
+        transition: var(--transition);
+
+    }
+
+    .navbar.active {
+
+        opacity: 1;
+
+        visibility: visible;
+
+        transform: translateY(0);
+
+    }
+
+    .nav-link {
+
+        width: 100%;
+
+    }
+
+    .menu-toggle {
+
+        display: flex;
+
+    }
+
+
+    /* Hero */
+
+    .hero {
+
+        padding: 120px 0 70px;
+
+    }
+
+    .hero-container {
+
+        gap: 45px;
+
+    }
+
+    .hero-title {
+
+        font-size: 42px;
+
+        letter-spacing: -1.5px;
+
+    }
+
+    .hero-description {
+
+        font-size: 14px;
+
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        width: 100%;
+
+    }
+
+    .btn {
+
+        width: 100%;
+
+    }
+
+    .hero-highlights {
+
+        gap: 12px;
+
+    }
+
+    .highlight-item strong {
+
+        font-size: 17px;
+
+    }
+
+    .highlight-item span {
+
+        font-size: 8px;
+
+    }
+
+    .highlight-line {
+
+        height: 30px;
+
+    }
+
+
+    /* Hero Visual */
+
+    .hero-visual {
+
+        min-height: 340px;
+
+    }
+
+    .browser-window {
+
+        width: 100%;
+
+        transform: none;
+
+    }
+
+    .browser-content {
+
+        min-height: 260px;
+
+        padding: 15px;
+
+    }
+
+    .mockup-main {
+
+        gap: 12px;
+
+    }
+
+    .mockup-image {
+
+        height: 110px;
+
+    }
+
+    .mockup-cards div {
+
+        height: 45px;
+
+    }
+
+
+    /* Floating Cards */
+
+    .floating-card {
+
+        padding: 9px 11px;
+
+    }
+
+    .floating-card strong {
+
+        font-size: 9px;
+
+    }
+
+    .floating-card span {
+
+        font-size: 7px;
+
+    }
+
+    .card-project {
+
+        left: -5px;
+
+        bottom: 25px;
+
+    }
+
+    .card-responsive {
+
+        right: -5px;
+
+        top: 25px;
+
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .container {
+
+        width: 92%;
+
+    }
+
+    .logo {
+
+        font-size: 21px;
+
+    }
+
+    .hero-title {
+
+        font-size: 35px;
+
+    }
+
+    .hero-subtitle {
+
+        font-size: 9px;
+
+        letter-spacing: 1.5px;
+
+    }
+
+    .hero-subtitle span {
+
+        width: 25px;
+
+    }
+
+    .hero-highlights {
+
+        gap: 8px;
+
+    }
+
+    .highlight-item strong {
+
+        font-size: 15px;
+
+    }
+
+    .highlight-item span {
+
+        font-size: 7px;
+
+    }
+
+    .browser-header {
+
+        height: 35px;
+
+    }
+
+    .browser-content {
+
+        min-height: 220px;
+
+    }
+
+    .mockup-image {
+
+        height: 90px;
+
+    }
+
+    .mockup-image-inner {
+
+        width: 45px;
+
+        height: 45px;
+
+        font-size: 17px;
+
+    }
+
+}
+/* =====================================================
+   ABOUT RESPONSIVE
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .about-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+    .about-visual {
+
+        min-height: 400px;
+
+    }
+
+    .about-content {
+
+        max-width: 700px;
+
+        margin: 0 auto;
+
+        text-align: center;
+
+    }
+
+    .about-features {
+
+        text-align: left;
+
+    }
+
+    .about-btn {
+
+        margin: 0 auto;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .about {
+
+        padding: 80px 0;
+
+    }
+
+    .section-heading {
+
+        margin-bottom: 45px;
+
+    }
+
+    .section-heading h2 {
+
+        font-size: 32px;
+
+    }
+
+    .about-visual {
+
+        min-height: 350px;
+
+    }
+
+    .about-card-main {
+
+        width: 270px;
+
+        height: 320px;
+
+    }
+
+    .about-floating-card {
+
+        right: 0;
+
+        bottom: 25px;
+
+    }
+
+    .about-features {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .about-content .about-intro {
+
+        font-size: 15px;
+
+    }
+
+}
+/* =====================================================
+   SERVICES RESPONSIVE
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .services-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .services {
+
+        padding: 80px 0;
+
+    }
+
+    .services-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .service-card {
+
+        min-height: 320px;
+
+        padding: 30px 25px;
+
+    }
+
+    .services-bottom {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+}
+/* =====================================================
+   PROJECTS RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .projects {
+
+        padding: 80px 0;
+
+    }
+
+    .projects-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .project-image {
+
+        height: 260px;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .project-filters {
+
+        gap: 7px;
+
+    }
+
+    .filter-btn {
+
+        padding: 8px 13px;
+
+        font-size: 10px;
+
+    }
+
+    .project-image {
+
+        height: 220px;
+
+    }
+
+    .project-info {
+
+        padding: 23px 20px 25px;
+
+    }
+
+    .project-info h3 {
+
+        font-size: 18px;
+
+    }
+
+    .projects-bottom {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+}
+.project-card {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.3s ease;
+
+}
+/* =====================================================
+   WHY ME RESPONSIVE
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .why-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .why-me {
+
+        padding: 80px 0;
+
+    }
+
+    .why-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .why-card {
+
+        min-height: 230px;
+
+        padding: 30px 25px;
+
+    }
+
+}
+/* =====================================================
+   PROCESS RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .process {
+
+        padding: 80px 0;
+
+    }
+
+    .process-step {
+
+        grid-template-columns:
+            55px 1px 1fr;
+
+        gap: 15px;
+
+        min-height: 155px;
+
+    }
+
+    .process-number {
+
+        width: 45px;
+
+        height: 45px;
+
+        font-size: 10px;
+
+    }
+
+    .process-content {
+
+        padding-bottom: 35px;
+
+    }
+
+    .process-content h3 {
+
+        font-size: 17px;
+
+    }
+
+    .process-content p {
+
+        font-size: 11px;
+
+    }
+
+}
+/* =====================================================
+   SKILLS RESPONSIVE
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .skills-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .skills {
+
+        padding: 80px 0;
+
+    }
+
+    .skills-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .skill-card {
+
+        padding: 18px;
+
+    }
+
+}
+/* =====================================================
+   PACKAGES RESPONSIVE
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .packages-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+    .package-card:last-child {
+
+        grid-column:
+            1 / -1;
+
+        max-width: 500px;
+
+        width: 100%;
+
+        margin: 0 auto;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .packages {
+
+        padding: 80px 0;
+
+    }
+
+    .packages-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .package-card:last-child {
+
+        grid-column: auto;
+
+        max-width: none;
+
+    }
+
+    .package-card {
+
+        padding: 30px 25px;
+
+    }
+
+}
+/* =====================================================
+   CONTACT RESPONSIVE
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+    }
+
+    .contact-info {
+
+        max-width: 650px;
+
+        width: 100%;
+
+        margin: 0 auto;
+
+    }
+
+    .contact-form-wrapper {
+
+        max-width: 700px;
+
+        width: 100%;
+
+        margin: 0 auto;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact {
+
+        padding: 80px 0;
+
+    }
+
+    .contact-form-wrapper {
+
+        padding: 25px 20px;
+
+    }
+
+    .contact-form {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .form-group:nth-last-of-type(1) {
+
+        grid-column: auto;
+
+    }
+
+    .contact-submit {
+
+        grid-column: auto;
+
+    }
+
+    .form-note {
+
+        grid-column: auto;
+
+    }
+
+}
+/* =====================================================
+   FOOTER RESPONSIVE
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .footer-main {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 45px 35px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .footer {
+
+        padding-top: 60px;
+
+    }
+
+    .footer-main {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding-bottom: 40px;
+
+    }
+
+    .footer-brand > p {
+
+        max-width: 400px;
+
+    }
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+
+    }
+
+}
